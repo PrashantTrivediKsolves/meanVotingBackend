@@ -22,3 +22,5 @@ const sequelize = new Sequelize('votingSite', 'postgres', '123456', {
     newuserModel,
   }
   
+
+  //npm i bcrypt body-parser cookie-parser cors dotenv express jsonwebtoken pg pg-hstore sequelize
