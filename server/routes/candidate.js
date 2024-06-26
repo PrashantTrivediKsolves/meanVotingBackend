@@ -20,7 +20,6 @@ routercandidate.post('/candidate', async (req, res) => {
   }
 });
 
-
 // get all the condidates....
 
 routercandidate.get("/all_candidate",async(req,res)=>
@@ -28,6 +27,9 @@ routercandidate.get("/all_candidate",async(req,res)=>
   const candidates=await newcandidateModel.findAll({});
   res.status(200).json(candidates);
 })
+
+
+
 // update candidates....
 
 routercandidate.put('/candidate/:id', async (req, res) => {

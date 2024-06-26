@@ -6,7 +6,7 @@ import bcrypt from "bcrypt";
 import jwt from 'jsonwebtoken';
 const JWT_SECRET = 'your-secret-key';
 
-import { newuserModel } from '../postges/user.js';
+import {newuserModel} from '../postges/user.js';
 
 routeruser.post('/signup', async (req, res) => {
   try {

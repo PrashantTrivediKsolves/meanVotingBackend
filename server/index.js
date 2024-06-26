@@ -1,4 +1,5 @@
 import express from 'express';
+import 'dotenv/config';
 
 import bodyParser from 'body-parser';
 
@@ -34,6 +35,8 @@ app.use(cors({
 //access req.body.......
 
 app.use(bodyParser.json());
+
+
 
 // Define a simple route to check if the app is running..........
 

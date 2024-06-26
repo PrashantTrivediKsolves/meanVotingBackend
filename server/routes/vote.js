@@ -2,9 +2,9 @@ import  express from 'express';
 
 const routervote = express.Router();
 
-import { newvoteModel } from '../postges/vote.js';
+import {newvoteModel} from '../postges/vote.js';
 
-import { newuserModel } from '../postges/user.js';
+import {newuserModel} from '../postges/user.js';
 
 import { where } from 'sequelize';
 
