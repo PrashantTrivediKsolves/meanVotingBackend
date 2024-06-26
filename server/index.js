@@ -62,15 +62,21 @@ app.listen(PORT, () => {
   console.log(`Server is running at port ${PORT}`);
 });
 
+// Connect to the database models
+(async () => {
+  await connectionUser();
+  await connectionCandidate();
+  await connectionVote();
+})();
 
-// connection of the user model.
+// // connection of the user model.
 
-connectionUser();
+// connectionUser();
 
-// connetcion of the candidate model.
+// // connetcion of the candidate model.
 
-connectionCandidate();
+// connectionCandidate();
 
-// connection of vote model.
+// // connection of vote model.
 
-connectionVote();
+// connectionVote();
